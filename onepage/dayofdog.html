@@ -5,41 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>W3Cparallax</title>
+    <title>Day of Dog</title>
     <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             margin: 0;
             font-family: 'Mansalva', cursive;
         }
 
-        nav {
-            display: table;
+        .container {
+            max-width: 1200px;
             margin: 0 auto;
-        }
-
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-        }
-
-        nav ul li {
-            float: left;
-        }
-
-        nav ul li a {
-            display: inline-block;
-            padding: 15px 20px;
-            text-decoration: none;
-        }
-
-        .clearfix {
-            clear: both;
+            display: flex;
+            justify-content: space-between;
         }
 
         .index-banner {
@@ -75,7 +53,7 @@
             background-size: cover;
             background-position: center;
             width: 100%;
-            height: 40vh;
+            height: 60vh;
             background-attachment: fixed;
         }
 
@@ -121,58 +99,21 @@
 
         .content-banner2 {
             background-image: url('https://www.nps.gov/thingstodo/images/RubyHaydenOldNERoad_BADL.jpg?width=950&quality=90&mode=crop');
-            background-size: cover;
-            background-position: center;
-            width: 100%;
-            height: 50vh;
-            background-attachment: fixed;
-        }
-
-        .index-title2 {
-            padding: 10px;
-            background-color: rgb(82, 80, 80);
-            color: white;
-            font-size: 32px;
-            letter-spacing: 5px;
-            float: left;
-            position: relative;
-            left: calc(50% - 130px);
-            bottom: calc(50% - 100px);
         }
 
         .index-banner2 {
             background-image: url('https://imgix.bustle.com/rehost/2017/11/21/5c7ae7de-36b5-4786-bcdb-ac9d2f3ac9c7.jpg?w=970&h=546&fit=crop&crop=faces&auto=format&q=70');
             background-size: cover;
             background-position: center;
+            position: relative;
+            top:117px;
             width: 100%;
-            height: 15vh;
-            background-attachment: fixed;
-        }
-
-        .start {
-            width: 80px;
-            border-radius: 100px;
-            background-color: rgba(100, 98, 98, 0.527);
-            text-align: center;
-            background-position: center;
-            position: fixed;
-            right: 6px;
-            bottom: 6px;
+            height: 100vh;
         }
     </style>
 </head>
 
 <body>
-    <nav id="nav">
-        <ul>
-            <li><a href="#index-banner">One Day Start</a></li>
-            <li><a href="#content">Morning</a></li>
-            <li><a href="#content-banner">On The Grass</a></li>
-            <li><a href="#content-banner2">On The Road</a></li>
-            <li><a href="#index-title2">THE END</a></li>
-            <div class="clearfix"></div>
-        </ul>
-    </nav>
     <main>
         <section id="index-banner">
             <div class="index-banner">
@@ -208,7 +149,7 @@
             </div>
         </section>
         <section id="content-banner2">
-            <div class="content-banner2">
+            <div class="content-banner content-banner2">
                 <div class="mask"></div>
                 <span class="banner-title">On The Road</span>
                 <div class="banner-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias sed ad totam,
@@ -217,15 +158,13 @@
             </div>
         </section>
         <section id="index-banner2">
-            <div class="index-banner">
-                <div class="mask"></div>
-                <span class="index-title2" id="index-title2">THE END</span>
-            </div>
             <div class="index-banner2">
                 <div class="mask"></div>
+                <span class="index-title">THE END</span>
             </div>
         </section>
-        <div class="start"><a href="#nav">TOP</a></div>
+
+        
     </main>
 
 </body>
