@@ -4,9 +4,9 @@ body {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 34px;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 30px;
   font-weight: bolder;
   letter-spacing: .5em;
 }
@@ -26,12 +26,12 @@ footer a {
   font-family: 'Work Sans', sans-serif;
   display: block;
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   top: 50%;
   left: 50%;
-  margin-top: -200px;
-  margin-left: -200px;
+  margin-top: -175px;
+  margin-left: -175px;
 }
 
 .roulette .shadow {
@@ -61,10 +61,10 @@ footer a {
   position: absolute;
   width: 0;
   height: 0;
-  top: -200px;
-  left: 200px;
-  -webkit-transform-origin: 0% 400px;
-          transform-origin: 0% 400px;
+  top: -175px;
+  left: 175px;
+  -webkit-transform-origin: 0% 350px;
+          transform-origin: 0% 350px;
   border: 0 solid transparent;
 }
 
@@ -103,10 +103,10 @@ footer a {
   position: absolute;
   width: 0;
   height: 0;
-  top: -200px;
-  left: 200px;
-  -webkit-transform-origin: 0% 400px;
-          transform-origin: 0% 400px;
+  top: -175px;
+  left: 175px;
+  -webkit-transform-origin: 0% 350px;
+          transform-origin: 0% 350px;
   border: 0 solid transparent;
 }
 
@@ -209,6 +209,6 @@ footer a {
 }
 
 .roulette .spinner .item[data-type="time"] .label i {
-  font-size: 1.5em;
+  font-size: 1em;
 }
 /*# sourceMappingURL=style.css.map */
