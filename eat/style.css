@@ -26,12 +26,12 @@ footer a {
   font-family: 'Work Sans', sans-serif;
   display: block;
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   top: 50%;
   left: 50%;
-  margin-top: -250px;
-  margin-left: -250px;
+  margin-top: -200px;
+  margin-left: -200px;
 }
 
 .roulette .shadow {
@@ -61,10 +61,10 @@ footer a {
   position: absolute;
   width: 0;
   height: 0;
-  top: -250px;
-  left: 250px;
-  -webkit-transform-origin: 0% 500px;
-          transform-origin: 0% 500px;
+  top: -200px;
+  left: 200px;
+  -webkit-transform-origin: 0% 400px;
+          transform-origin: 0% 400px;
   border: 0 solid transparent;
 }
 
@@ -103,10 +103,10 @@ footer a {
   position: absolute;
   width: 0;
   height: 0;
-  top: -250px;
-  left: 250px;
-  -webkit-transform-origin: 0% 500px;
-          transform-origin: 0% 500px;
+  top: -200px;
+  left: 200px;
+  -webkit-transform-origin: 0% 400px;
+          transform-origin: 0% 400px;
   border: 0 solid transparent;
 }
 
