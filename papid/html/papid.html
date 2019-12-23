@@ -1060,30 +1060,30 @@
 
   <script>
     $(document).ready(function () {
-      $(".flip1").hover(function () {
+      // $(".flip1").hover(function () {
         // $(".panel1").slideDown("slow");
+        // $(".panel1").slideToggle();
+      // }, function () {})
+
+      $(".flip1").click(function () {
         $(".panel1").slideToggle();
-      }, function () {})
+      })
 
-      // $(".flip1").click(function () {
-      //   $(".panel1").slideToggle();
-      // })
-
-      $(".flip2").hover(function () {
-        $(".panel2").slideToggle();
-      }, function () {})
-
-      // $(".flip2").click(function () {
+      // $(".flip2").hover(function () {
       //   $(".panel2").slideToggle();
-      // })
+      // }, function () {})
 
-      $(".flip3").hover(function () {
-        $(".panel3").slideToggle();
-      }, function () {})
+      $(".flip2").click(function () {
+        $(".panel2").slideToggle();
+      })
 
-      // $(".flip3").click(function () {
+      // $(".flip3").hover(function () {
       //   $(".panel3").slideToggle();
-      // })
+      // }, function () {})
+
+      $(".flip3").click(function () {
+        $(".panel3").slideToggle();
+      })
     });
   </script>
 
