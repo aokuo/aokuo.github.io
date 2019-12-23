@@ -25,6 +25,8 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css">
 
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+
   <title>集集生態社區家園</title>
 
 </head>
@@ -44,7 +46,7 @@
             <a class="nav-link" href="#about">認識園區</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#new">園區消息</a>
+            <a class="nav-link" href="#news">園區消息</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#story">園區故事</a>
@@ -93,7 +95,7 @@
             創立緣起
           </a></p>
         <div class="panel1 card-body border border-primary">
-          「南投縣智障者家長協會」是由心智障礙者家長及關懷心智障礙者相社團法人南投縣智障者家長協會LOGO關專業人員，共同發起之人民團體，於民國八十一年五月二十四日正式成立。原名為「南投縣啟智協會」，經歷三屆理監事之運作後，為更強調本會為心智障礙者家屬之組成並積極推動家長參與，於民國八十七年正式更名為「南投縣智障者家長協會」，並於八十九年七月於南投地方法院辦理法人登記。
+          『南投縣智障者家長協會』由一群具有相同理念與共同目標的心智障礙者家長及關懷心智障礙者之相關專業人士所共同發起組成，致力於已成年的心智障礙者相關服務－就學、就業、就養、權益提倡、體育休閒活動等。<br>協會並於民國90年6月規劃了創新、開放性的『生態社區家園』，提供小型化、社區化照顧服務，讓中重度以上心智障者有機會走出家庭，融入社區學習，不必遠離家庭；在社區內接受照顧與訓練，當孩子經過訓練；能力被提升後，也能轉變成生產者，而不是社區依賴人口。推廣『生態社區家園、工作站』服務模式至其他鄉鎮，希望照顧弱勢心智障礙者中重度以上家庭，一直是協會的目標，亦是我們的使命。
         </div>
 
         <br>
@@ -116,8 +118,8 @@
             園區服務
           </a></p>
         <div class="panel3">
-          <div class="card-body d-flex  border border-info">
-            <div class="col-6 card_l">
+          <div class="card-body border border-info">
+            <div class="col-md-6 col-12">
               <h5 class="card-title">服務對象</h5>
               <p class="card-text">
                 <ul>
@@ -127,7 +129,7 @@
                 </ul>
               </p>
             </div>
-            <div class="col-6 card_r">
+            <div class="col-md-6 col-12">
               <h5 class="card-title">服務內容</h5>
               <p class="card-text">
                 <ul>
@@ -150,7 +152,7 @@
 
         </div>
       </section>
-
+      <br>
 
       <!-- <div class="accordion" id="accordionExample">
           <div class="card">
@@ -260,9 +262,184 @@
 
 
 
-      <section id='new'>
+      <section id='news'>
 
         <h1>園區消息</h1>
+
+        <table id="news_content" class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>發佈日期</th>
+              <th>標題</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">2019-12-10</th>
+              <td>
+                <a data-toggle="modal" data-target=".new1" class="d-block">108年這裡有愛歲末感恩暨成果分享活動
+                </a>
+                <div class="modal fade new1 text-dark" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                      <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold" id="exampleModalScrollableTitle">108年這裡有愛歲末感恩暨成果分享活動
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          又到了歲末時節，感恩的時刻，我們藉由歲末活動要感謝多年來持續相挺與支持的好朋友，也希望能透過這個機會，讓心智障礙者有感恩表演的舞台，展現這一年學習的成果。同時，我們希望將服務的成果與大家一起分享。現場備有一家一菜的特色佳餚及傳遞愛的物資發放，誠摯邀請大家一同來參加這裡有愛的天使嚮宴。<br><br>
+
+                          一、主辦單位：社團法人南投縣智障者家長協會<br>
+                          二、協辦單位：永昌宮管理委員會<br>
+                          三、活動時間：108年12月15日(星期日）09：00～13：30<br>
+                          四、參加對象：心智障礙者家庭、志工及關懷心智障礙者社區民眾<br>
+                          五、活動地點：集集生態社區家園【集集鎮文心街206號】-永昌宮旁<br>
+                          六、活動流程：<br>
+                          09：00～09：30 相見歡<br>
+                          09：30～09：40 開場表演~<br>
+                          09：40～10：00 理事長/來賓致詞<br>
+                          10：00～11：00 服務成果分享&家長分享<br>
+                          11：00～11：10 這裡有愛頒獎活動<br>
+                          11：10～11：35 土地公捉迷藏<br>
+                          11：35～12：00 天使作品義賣活動<br>
+                          12：00～12：20 感恩有您~傳遞愛-物資發放(會員為主以戶發放)<br>
+                          12：20～13：30 幸福感恩餐敘&交流<br>
+                          13：30～ 賦歸~期待再相會<br><br>
+                          ※為倡議環保，參與活動時，請自行攜帶水杯及環保餐具。<br>
+                          報名請電洽049-2760860或傳真049-2764988 夏社工<br>
+                          <br>
+                          發佈日期：2019-12-10
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">2019-07-18</th>
+              <td>
+                <a data-toggle="modal" data-target=".new2" class="d-block">2019有愛無礙，讓愛常在
+                  -特殊需求者機構參訪暨家庭喘息活動
+                </a>
+                <div class="modal fade new2 text-dark" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                      <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold" id="exampleModalScrollableTitle">2019有愛無礙，讓愛常在
+                          -特殊需求者機構參訪暨家庭喘息活動</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          親愛的家長們：<br>
+                          在照顧孩子之餘，您是否曾為自己安排舒壓喘息的時間？您是否曾經好好放鬆一下，讓自己恢復照顧能量呢？藉由安排這次喘息活動，期望讓家長們獲得身心靈放鬆，享受悠閒的假日時光！此外，我們亦安排機構參訪及交流，透過實地參觀、瞭解服務特色及內容，讓家長有機會了解多元化的社會福利服務資訊。歡迎您一起來參加！<br>
+                          ◆指導單位：南投縣政府<br>
+                          ◆主辦單位：社團法人南投縣智障者家長協會<br>
+                          ◆活動日期：108年8月17日（星期六）<br>
+                          ◆活動地點：奇美食品幸福工廠、天一中藥生活化園區、小熊維尼彩繪村及財團法人天主教台南市私立德蘭啟智中心<br>
+                          ◆參加對象(人數)：心智障礙者及其家庭成員、工作人員42人(額滿為止)<br>
+                          ◆報名方式：<br>
+                          1. 報名費用：為鼓勵親子同行，2人酌收費用1,200元，心智障礙者增加1人收500元；家屬增加1人收800元（含交通費、保險、餐費、門票及DIY費用等）<br>
+                          ＊DIY部分，以家庭為單位計算數量，每戶以一份為限！<br>
+                          2.可直接至協會繳費，或請持劃撥單至郵局劃撥後，將單據黏貼在報名表，傳真至協會，049-2761-914，並來電確認049-2760-612或2760-774連先生，始完成報名手續。<br>
+                          3.經報名繳費後，遇有要事無法參加者，請在8月2日前來電告知，將退還全部費用；未告知者無法退費，請配合協會作業手續，謝謝合作！<br>
+                          4.報名截止日期：即日起至108年7月31日(三)止，名額有限，請儘速報名，人數額滿即提早停止報名。<br>
+                          5.埔里、魚池、國姓參加人員，請至草屯炎峰國小門口集合上車。<br>
+                          6.8月14日前，寄發行前通知單或電話通知，如有任何問題，請來電詢問。
+                          <br> <br>
+                          發佈日期：2019-07-18
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th scope="row">2019-07-03</th>
+              <td>
+                <a data-toggle="modal" data-target=".new3"
+                  class="d-block">2019第12屆全國心智障礙者親子運動大會即將開跑！！(報名期間108.07.01-108.08.16)
+                </a>
+                <div class="modal fade new3 text-dark" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                      <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold" id="exampleModalScrollableTitle">
+                          2019第12屆全國心智障礙者親子運動大會即將開跑！！(報名期間108.07.01-108.08.16)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          一、 活動目的： <br>
+                          （一） 培養心智障礙者運動休閒技能 <br>
+                          （二） 拓展人際關係、促進社會適應能力 <br>
+                          （三） 陶冶性情、激發潛能、建立自信心 <br>
+                          二、 主辦單位：中華民國智障者家長總會、中華民國心智障礙者體育運動總會、社團法人台中市智障者家長協會 <br>
+                          三、 承辦單位：社團法人南投縣智障者家長協會 <br>
+                          四、活動日期：民國108年11月16～17日（六、日） <br>
+                          五、活動地點： <br>
+                          體育場：台中市豐原田徑場(台中市豐原區豐北街221號) <br>
+                          游泳池：精英游泳學校(台中市神岡區三民南路298號) <br>
+                          六、報名方式： <br>
+                          1. 報名費用：心智障礙者每人1,000元；陪伴家長每人2,000元（含交通、住
+                          宿、保險、餐費、服裝等） <br>
+                          2.可直接至協會繳費，或請持劃撥單至郵局劃撥後，將單據黏貼在報名表，
+                          傳真至協會，049-2761-914，並來電確認049-2760-612，始完成報名手續。 <br>
+                          3.報名截止日期：108年8月16日（星期五）止，名額有限，請儘速報名，不可錯過的機會。 <br>
+                          4.經報名繳費後，恕無法退費，請配合協會作業手續，謝謝您的配合！ <br>
+                          5.參加人數：42人(含工作人員)。 <br>
+                          6.為鼓勵親子一起參加，故，心智障礙者務必要有家長陪同。 <br>
+                          7.11月08日前，寄發行前通知單，如有任何問題，請來電詢問。 <br>
+                          七、聯絡人：連先生 電話：049-2760-612或2760-774 <br>
+                          八、報名分組方式 <br>
+                          1.性別分組：分男子組、女子組。 <br>
+                          2.年齡分層 <br>
+                          （1）兒童組：8～12歲(96年~100年) <br>
+                          （2）少年組：13～16歲(92年~95年) <br>
+                          （3）青年組：17～22歲(86年~91年) <br>
+                          （4）成年組：23～30歲(78年~85年) <br>
+                          （5）壯年組：31歲以上(77年以前) <br>
+                          （6）每組報名人數不滿3人者，得併組或為表演賽(由大會決定之)。 <br>
+                          3.競賽種類：田賽、徑賽、桌球、籃球、游泳、趣味競賽、家長競走接力賽。 <br>
+                          <br>
+                          發佈日期：2019-07-03
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+
+        <!-- 
+
         <table class="table">
           <thead class="thead-dark">
             <tr>
@@ -437,117 +614,129 @@
 
 
           </tbody>
-        </table>
+        </table> -->
       </section>
 
       <section id='story'>
         <h1>園區故事</h1>
-        <table class="table">
-          <thead class="thead-light">
+        <table id="story_content" class="table table-striped table-bordered">
+          <thead>
             <tr>
-              <th scope="col">發佈日期</th>
-              <th scope="col">標題</th>
+              <th>發佈日期</th>
+              <th>標題</th>
             </tr>
           </thead>
           <tbody>
-              <tr>
-                  <th scope="row">2019-08-01</th>
-                  <td>
-                    <a data-toggle="modal" data-target=".story1">我的成長故事--文/漢仔
-                    </a>
-                    <div class="modal fade story1 text-dark" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-                      aria-hidden="true">
-                      <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-    
-                          <div class="modal-header">
-                            <h5 class="modal-title font-weight-bold" id="exampleModalScrollableTitle">
-                                我的成長故事--文/漢仔</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <p>
-                                我出生在集集小鎮，小時候由外公和外婆養大，家裡有五位成員，妹妹小時候就出養，姊姊嫁到台東，現在我和爸媽住在一起，家裡的開銷靠低收入戶補助和我剪檳榔的收入過生活。<br>
-                                從小較缺乏父母的愛，稍懂事時常獨自在社區裡串來串去，養成我比較獨立的個性，學會許多自立的生活技能，但也學了許多壞習慣。來到園區後，有老師的輔導，能分辯什麼是不好聽的話，所以不能講；也不能學抽煙、喝酒和吃檳榔…的壞習慣，讓我有禮貌沒學壞。<br>
-                                我在園區裡有學種菜、生態導覽、音樂律動和打太鼓…，負責飼養阿寶（豬），每天會餵牠們二次，還會幫牠們洗澡及清掃房舍。記得在99年的時候，馬英九總統有來社區家園，我有擔任導覽人員，介紹家園的環境。我雖然個子小又瘦，但，我很有力氣，又學得快。拿鋤頭鬆土、除草、澆水或施肥，在老師的指導下，樣樣難不倒我。<br>
-                                在園區裡，除了學會農作技能和導覽外，我對節奏和律動有些天份，是老師的小幫手，帶領大家暖身操及音樂律動，更是太鼓隊的隊長，同儕們常倚賴我動作及口訣的帶領，表演讓我有自信，也享受別人給我的掌聲。<br>
-                                園區就像一個大家庭，老師、阿姨、社工哥哥都對我很好，會提醒我頭髮、鬍子長了要剪；糖果少吃一點才不會蛀牙；洗澡、洗頭要洗乾淨；還有，錢要放在錢包裡才不會弄丟，在這裡有許多同儕可以互動，我很開心。
-                              <br> <br>
-                              發佈日期：2019-08-01
-                            </p>
-                          </div>
-                        </div>
+            <tr>
+              <th scope="row">2019-08-01</th>
+              <td>
+                <a data-toggle="modal" data-target=".story1" class="d-block">我的成長故事--文/漢仔
+                </a>
+                <div class="modal fade story1 text-dark" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                      <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold" id="exampleModalScrollableTitle">
+                          我的成長故事--文/漢仔</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          我出生在集集小鎮，小時候由外公和外婆養大，家裡有五位成員，妹妹小時候就出養，姊姊嫁到台東，現在我和爸媽住在一起，家裡的開銷靠低收入戶補助和我剪檳榔的收入過生活。<br>
+                          從小較缺乏父母的愛，稍懂事時常獨自在社區裡串來串去，養成我比較獨立的個性，學會許多自立的生活技能，但也學了許多壞習慣。來到園區後，有老師的輔導，能分辯什麼是不好聽的話，所以不能講；也不能學抽煙、喝酒和吃檳榔…的壞習慣，讓我有禮貌沒學壞。<br>
+                          我在園區裡有學種菜、生態導覽、音樂律動和打太鼓…，負責飼養阿寶（豬），每天會餵牠們二次，還會幫牠們洗澡及清掃房舍。<br>
+                          記得在99年的時候，馬英九總統有來社區家園，我有擔任導覽人員，介紹家園的環境。我雖然個子小又瘦，但，我很有力氣，又學得快。拿鋤頭鬆土、除草、澆水或施肥，在老師的指導下，樣樣難不倒我。<br>
+                          在園區裡，除了學會農作技能和導覽外，我對節奏和律動有些天份，是老師的小幫手，帶領大家暖身操及音樂律動，更是太鼓隊的隊長，同儕們常倚賴我動作及口訣的帶領，表演讓我有自信，也享受別人給我的掌聲。<br>
+                          園區就像一個大家庭，老師、阿姨、社工哥哥都對我很好，會提醒我頭髮、鬍子長了要剪；糖果少吃一點才不會蛀牙；洗澡、洗頭要洗乾淨；還有，錢要放在錢包裡才不會弄丟，在這裡有許多同儕可以互動，我很開心。
+                          <br> <br>
+                          發佈日期：2019-08-01
+                        </p>
                       </div>
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                    <th scope="row">2019-08-01</th>
-                    <td>
-                      <a data-toggle="modal" data-target=".story2">我的成長故事--文/阿玉
-                      </a>
-                      <div class="modal fade story2 text-dark" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                          <div class="modal-content">
-      
-                            <div class="modal-header">
-                              <h5 class="modal-title font-weight-bold" id="exampleModalScrollableTitle">
-                                  我的成長故事--文/阿玉</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <p>
-                                  媽媽說我就像「不一樣的天使」這首歌的歌詞描述得一樣，我急著來到這個世界，飛的太快、太快了，所以，我的頭兒暈了，也因為貪玩而遲來到這個世界，因此，媽媽生我時產程延誤...。<br>
-                                  我生長在一個幸福的家庭，家裡有6個人，爸爸是公務人員、媽媽是家庭主婦、2個妹妹都在上班、弟弟在讀高中；從小到大我有爸媽的疼愛與呵護；還有妹妹弟弟的支持!在學校時更有照顧我的老師及同學們；現在還有一群天使農夫的同儕陪伴，我覺得我是最幸福的人！<br>
-                                  在家園我學習飼養動物、種植蔬菜、園藝陶冶及生態導覽，還有多元的文康休閒活動：有打太鼓、奧福音樂、體適能及自立支持…等；我每天早上及下午都會餵鴨子和鵝吃飯，她們呱呱呱得像在跟我說謝謝!雖然種植蔬菜我有點小迷糊，無法將種菜步驟記清楚，但我喜歡幫菜菜抓蟲蟲，還有享受採收蔬菜的喜悅；我更喜愛包裝蔬菜及到社區銷售蔬菜，當我把健康的蔬菜拿到社區賣時，我會跟大家介紹：「家園種的菜沒有噴灑農藥、菜很好吃，大家快來買菜喔！」
-                                  學習烹飪也是我的興趣，老師及阿姨會帶著我一起清洗蔬菜、備料，還會教導我如何煮菜並注意安全。當大家吃到香噴噴的飯菜，我就會很開心的問：菜好吃嗎？是我自己煮的耶！另外，最讓我感到自信的是，我是園區的最佳導覽員，有客人來家園參訪時，我會有禮貌的打招呼、遞上茶水，並為大家進行生態導覽解說，大家都說我很棒喔！<br>
-                                  老師常說我不專心；個性很急，所以有許多的事情(工作)沒有確實做好，這是我要再改進及加強的地方。例如：老師在交代事情時，我要停止工作並靜下來，專心的用耳朵聽，將老師的話仔細聽清楚，不可以沒有聽清楚就急著跑走，當別人給予糾正或建議時，我要虛心接受，不可以臭著臉不理會，要當個受喜愛的天使農夫。
-                                <br> <br>
-                                發佈日期：2019-08-01
-                              </p>
-                            </div>
-                          </div>
-                        </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+
+            <tr>
+              <th scope="row">2019-08-01</th>
+              <td>
+                <a data-toggle="modal" data-target=".story2" class="d-block">我的成長故事--文/阿玉
+                </a>
+                <div class="modal fade story2 text-dark" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                      <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold" id="exampleModalScrollableTitle">
+                          我的成長故事--文/阿玉</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                      <th scope="row">2019-08-01</th>
-                      <td>
-                        <a data-toggle="modal" data-target=".story3">我的成長故事--文/笳妹妹
-                        </a>
-                        <div class="modal fade story3 text-dark" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-                          aria-hidden="true">
-                          <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-        
-                              <div class="modal-header">
-                                <h5 class="modal-title font-weight-bold" id="exampleModalScrollableTitle">
-                                    我的成長故事--文/笳妹妹</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                <p>
-                                    我住在名間鄉松柏嶺，出生在一個小康家庭，家裡務農，有阿公、阿嬤、爸爸、媽媽，有二位姊姊，有一位弟弟，在家排行老三。   <br>
-                                    從小我就是一個很難帶的小孩，狀況特別多，爸媽讓我跟一般人一樣受教育，從幼稚園、國小、國中、高職。在國小五年級時，生了一場重病，讓我生活上有了很多的不方便。因為，疾病造成了我的雙手顫抖；造成了我的自卑。國中時，更被同學排擠，讓我更不敢跟人互動，越來越沈默，一直到高職時，生活有了變化，高職三年級實習時，老師介紹我到集集生態社區家園，在實習的一年裡，我改變了很多，爸媽看到我的改變，便希望我畢業後，能夠繼續留在家園學習。   <br>
-                                    剛到家園時，我是一個不敢主動問好的人，在老師一次一次不厭其煩的教導下，我改變了，我會主動問好，我變的更開朗有自信，老師為了訓練我手部的肌耐力，讓我加入太鼓隊，讓我手部能多動，也訓練我導覽，辦活動時上台分享，我不再害怕面對了。   <br>
-                                    天使農夫太鼓隊，常常受邀表演，需要面對很多的人群，我已不退縮，很有自信，這是我從沒想過的，我能有這樣的改變去面對人群。我有現在的自信、進歩，都要謝謝家園的老師、阿姨、志工。有她(他)們滿滿的愛、包容、耐心的陪伴支持!讓家園的每一學員，在安全有愛的環境裡學習成長，謝謝您們。
-                                  <br> <br>
-                                  發佈日期：2019-08-01
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
+                      <div class="modal-body">
+                        <p>
+                          媽媽說我就像「不一樣的天使」這首歌的歌詞描述得一樣，我急著來到這個世界，飛的太快、太快了，所以，我的頭兒暈了，也因為貪玩而遲來到這個世界，因此，媽媽生我時產程延誤...。<br>
+                          我生長在一個幸福的家庭，家裡有6個人，爸爸是公務人員、媽媽是家庭主婦、2個妹妹都在上班、弟弟在讀高中；從小到大我有爸媽的疼愛與呵護；還有妹妹弟弟的支持!在學校時更有照顧我的老師及同學們；現在還有一群天使農夫的同儕陪伴，我覺得我是最幸福的人！<br>
+                          在家園我學習飼養動物、種植蔬菜、園藝陶冶及生態導覽，還有多元的文康休閒活動：有打太鼓、奧福音樂、體適能及自立支持…等；我每天早上及下午都會餵鴨子和鵝吃飯，她們呱呱呱得像在跟我說謝謝!雖然種植蔬菜我有點小迷糊，無法將種菜步驟記清楚，但我喜歡幫菜菜抓蟲蟲，還有享受採收蔬菜的喜悅；我更喜愛包裝蔬菜及到社區銷售蔬菜，當我把健康的蔬菜拿到社區賣時，我會跟大家介紹：「家園種的菜沒有噴灑農藥、菜很好吃，大家快來買菜喔！」
+                          學習烹飪也是我的興趣，老師及阿姨會帶著我一起清洗蔬菜、備料，還會教導我如何煮菜並注意安全。當大家吃到香噴噴的飯菜，我就會很開心的問：菜好吃嗎？是我自己煮的耶！另外，最讓我感到自信的是，我是園區的最佳導覽員，有客人來家園參訪時，我會有禮貌的打招呼、遞上茶水，並為大家進行生態導覽解說，大家都說我很棒喔！<br>
+                          老師常說我不專心；個性很急，所以有許多的事情(工作)沒有確實做好，這是我要再改進及加強的地方。例如：老師在交代事情時，我要停止工作並靜下來，專心的用耳朵聽，將老師的話仔細聽清楚，不可以沒有聽清楚就急著跑走，當別人給予糾正或建議時，我要虛心接受，不可以臭著臉不理會，要當個受喜愛的天使農夫。
+                          <br> <br>
+                          發佈日期：2019-08-01
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">2019-08-01</th>
+              <td>
+                <a data-toggle="modal" data-target=".story3" class="d-block">我的成長故事--文/笳妹妹
+                </a>
+                <div class="modal fade story3 text-dark" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+
+                      <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold" id="exampleModalScrollableTitle">
+                          我的成長故事--文/笳妹妹</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          我住在名間鄉松柏嶺，出生在一個小康家庭，家裡務農，有阿公、阿嬤、爸爸、媽媽，有二位姊姊，有一位弟弟，在家排行老三。 <br>
+                          從小我就是一個很難帶的小孩，狀況特別多，爸媽讓我跟一般人一樣受教育，從幼稚園、國小、國中、高職。在國小五年級時，生了一場重病，讓我生活上有了很多的不方便。因為，疾病造成了我的雙手顫抖；造成了我的自卑。國中時，更被同學排擠，讓我更不敢跟人互動，越來越沈默，一直到高職時，生活有了變化，高職三年級實習時，老師介紹我到集集生態社區家園，在實習的一年裡，我改變了很多，爸媽看到我的改變，便希望我畢業後，能夠繼續留在家園學習。
+                          <br>
+                          剛到家園時，我是一個不敢主動問好的人，在老師一次一次不厭其煩的教導下，我改變了，我會主動問好，我變的更開朗有自信，老師為了訓練我手部的肌耐力，讓我加入太鼓隊，讓我手部能多動，也訓練我導覽，辦活動時上台分享，我不再害怕面對了。
+                          <br>
+                          天使農夫太鼓隊，常常受邀表演，需要面對很多的人群，我已不退縮，很有自信，這是我從沒想過的，我能有這樣的改變去面對人群。我有現在的自信、進歩，都要謝謝家園的老師、阿姨、志工。有她(他)們滿滿的愛、包容、耐心的陪伴支持!讓家園的每一學員，在安全有愛的環境裡學習成長，謝謝您們。
+                          <br> <br>
+                          發佈日期：2019-08-01
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+
+
+
+
+
           </tbody>
         </table>
       </section>
@@ -555,52 +744,52 @@
       <section id='photo'>
         <h1>活動花絮</h1>
         <!-- <div class="card bg-light"> -->
-          <!-- <div class="card-header">
+        <!-- <div class="card-header">
             活動花絮
           </div> -->
-          <div class="card-body">
-            <div class="photo_swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="card">
-                    <a href="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0040.jpg"
-                      data-lightbox="photo"><img class="card-img-top"
-                        src="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0040.jpg"
-                        alt=""></a>
-                  </div>
+        <div class="card-body">
+          <div class="photo_swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <a href="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0040.jpg"
+                    data-lightbox="photo"><img class="card-img-top"
+                      src="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0040.jpg"
+                      alt=""></a>
                 </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <a href="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0090.jpg"
-                      data-lightbox="photo"><img class="card-img-top"
-                        src="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0090.jpg"
-                        alt=""></a>
-                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <a href="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0090.jpg"
+                    data-lightbox="photo"><img class="card-img-top"
+                      src="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0090.jpg"
+                      alt=""></a>
                 </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <a href="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0130.jpg"
-                      data-lightbox="photo"><img class="card-img-top"
-                        src="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0130.jpg"
-                        alt=""></a>
-                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <a href="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0130.jpg"
+                    data-lightbox="photo"><img class="card-img-top"
+                      src="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0130.jpg"
+                      alt=""></a>
                 </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <a href="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0082.jpg"
-                      data-lightbox="photo"><img class="card-img-top"
-                        src="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0082.jpg"
-                        alt=""></a>
-                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <a href="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0082.jpg"
+                    data-lightbox="photo"><img class="card-img-top"
+                      src="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0082.jpg"
+                      alt=""></a>
                 </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <a href="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0131.jpg"
-                      data-lightbox="photo"><img class="card-img-top"
-                        src="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0131.jpg"
-                        alt=""></a>
-                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <a href="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0131.jpg"
+                    data-lightbox="photo"><img class="card-img-top"
+                      src="http://www.papid.org.tw/files/common_unit/d27a47ab-23be-4daa-bfc9-8ea8e2241a34/pic/1081215%e6%ad%b2%e6%9c%ab%e6%84%9f%e6%81%a9%e6%9a%a8%e6%88%90%e6%9e%9c%e5%88%86%e4%ba%ab_191217_0131.jpg"
+                      alt=""></a>
                 </div>
+              </div>
               <!-- </div> -->
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
@@ -810,13 +999,13 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+  </script>
   <!-- AOS JavaScript -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- AOS 初始化 -->
@@ -858,6 +1047,8 @@
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 
   <script>
     lightbox.option({
@@ -871,26 +1062,99 @@
     $(document).ready(function () {
       $(".flip1").hover(function () {
         $(".panel1").slideDown("slow");
-      }, function () {
-        $(".panel1").hover(function () { }, function () {
-          $(".panel1").hide();
-        })
+      }, function () {})
+
+      $(".flip1").click(function () {
+        $(".panel1").slideToggle();
       })
+
       $(".flip2").hover(function () {
         $(".panel2").slideDown("slow");
-      }, function () {
-        $(".panel2").hover(function () { }, function () {
-          $(".panel2").hide();
-        })
+      }, function () {})
+
+      $(".flip2").click(function () {
+        $(".panel2").slideToggle();
       })
 
       $(".flip3").hover(function () {
         $(".panel3").slideDown("slow");
-      }, function () {
-        $(".panel3").hover(function () { }, function () {
-          $(".panel3").hide();
-        })
+      }, function () {})
+
+      $(".flip3").click(function () {
+        $(".panel3").slideToggle();
       })
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      // $('#example').DataTable( {
+      // "paging":   false,
+      // "ordering": false,
+      // "info":     false,
+      // searching: false,
+
+      // "pagingType": "simple_numbers",
+      // "order": [1,"asc"],
+      // "language": {
+      // "lengthMenu": "顯示 _MENU_ 筆數/頁",
+      // "zeroRecords": "Nothing found - sorry",
+      // "info":"_PAGE_ / _PAGES_ 頁",
+      // "infoEmpty": "No records available",
+      // "infoFiltered": "(filtered from _MAX_ total records)"
+      //     aria: {
+      //     paginate: {
+      //       first:    '«',
+      //     previous: '‹',
+      //     next:     '›',
+      //     last:     '»'
+      //     }
+      // }
+
+      // });
+
+      $('#news_content').DataTable({
+        "order": [1, "asc"],
+        pagingType: 'full',
+        language: {
+          "lengthMenu": "顯示 _MENU_ 筆數/頁",
+          "info": "_PAGE_ / _PAGES_ 頁",
+          paginate: {
+            first: '«',
+            previous: '‹',
+            next: '›',
+            last: '»'
+          },
+          // aria: {
+          //     paginate: {
+          //         first:    'First',
+          //         previous: 'Previous',
+          //         next:     'Next',
+          //         last:     'Last'
+          //     }
+          // }
+        }
+      });
+    });
+  </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $('#story_content').DataTable({
+        "order": [1, "asc"],
+        pagingType: 'full',
+        language: {
+          "lengthMenu": "顯示 _MENU_ 筆數/頁",
+          "info": "_PAGE_ / _PAGES_ 頁",
+          paginate: {
+            first: '«',
+            previous: '‹',
+            next: '›',
+            last: '»'
+          },
+        }
+      });
     });
   </script>
 

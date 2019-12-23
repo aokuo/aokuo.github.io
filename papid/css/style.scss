@@ -83,11 +83,16 @@ body {
         padding: 10px;
     }
 
+    .panel3 .card-body {
+        display: flex;
+    }
 }
 
-
-
-
+@media screen and (max-width:576px) {
+    #about .panel3 .card-body {
+        display: inline-block;
+    }
+}
 
 #service {
     width: 100%;
@@ -98,15 +103,15 @@ body {
     }
 }
 
-#new,
+#news,
 #story {
     width: 100%;
     margin-top: 50px;
-
-    a {
-        display: block;
+    tr:hover {
+        background-color: rgba(153, 231, 50, 0.6);
     }
 }
+
 
 #photo {
     margin-top: 50px;

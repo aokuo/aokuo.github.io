@@ -85,6 +85,18 @@ body h1 {
   padding: 10px;
 }
 
+#about .panel3 .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 576px) {
+  #about .panel3 .card-body {
+    display: inline-block;
+  }
+}
+
 #service {
   width: 100%;
   margin-top: 50px;
@@ -94,15 +106,20 @@ body h1 {
   font-weight: bolder;
 }
 
-#new,
+#news,
 #story {
   width: 100%;
   margin-top: 50px;
 }
 
-#new a,
-#story a {
-  display: block;
+#news tr:hover,
+#story tr:hover {
+  background-color: rgba(153, 231, 50, 0.6);
+}
+
+#news th,
+#story th {
+  width: 120px;
 }
 
 #photo {
