@@ -1061,7 +1061,8 @@
   <script>
     $(document).ready(function () {
       $(".flip1").hover(function () {
-        $(".panel1").slideDown("slow");
+        // $(".panel1").slideDown("slow");
+        $(".panel1").slideToggle();
       }, function () {})
 
       $(".flip1").click(function () {
@@ -1069,7 +1070,7 @@
       })
 
       $(".flip2").hover(function () {
-        $(".panel2").slideDown("slow");
+        $(".panel2").slideToggle();
       }, function () {})
 
       $(".flip2").click(function () {
@@ -1077,7 +1078,7 @@
       })
 
       $(".flip3").hover(function () {
-        $(".panel3").slideDown("slow");
+        $(".panel3").slideToggle();
       }, function () {})
 
       $(".flip3").click(function () {
