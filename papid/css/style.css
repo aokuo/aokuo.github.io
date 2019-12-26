@@ -78,6 +78,7 @@ body h1 {
 #about .flip2:hover,
 #about .flip3:hover {
   color: white;
+  cursor: pointer;
 }
 
 #about h5 {
@@ -115,11 +116,7 @@ body h1 {
 #news tr:hover,
 #story tr:hover {
   background-color: rgba(153, 231, 50, 0.6);
-}
-
-#news th,
-#story th {
-  width: 120px;
+  cursor: pointer;
 }
 
 #photo {

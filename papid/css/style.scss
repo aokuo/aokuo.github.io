@@ -70,12 +70,14 @@ body {
     .panel2,
     .panel3 {
         display: none;
+       
     }
 
     .flip1:hover,
     .flip2:hover,
     .flip3:hover {
         color: white;
+        cursor: pointer;
     }
 
     h5 {
@@ -109,6 +111,7 @@ body {
     margin-top: 50px;
     tr:hover {
         background-color: rgba(153, 231, 50, 0.6);
+        cursor: pointer;
     }
 }
 
