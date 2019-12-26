@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
+    <title>Production Analysis Chart</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bolder;
+            color: rgb(11, 11, 124);
+        }
+
+        #board {
+            width: 100%;
+
+        }
+
+        .chart {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .row {
+            margin: 10px;
+        }
+
+        #board .col,
+        .title {
+            border: 5px solid rgba(0, 0, 255, 0.877);
+            margin: 2px;
+            border-radius: 10px;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        #page1,
+        #page2,
+        #page3 {
+            width: 100%;
+            height: 100vh;
+        }
+
+        #page3 .content {
+            color: white;
+            position: relative;
+            top: calc(50% - 278px);
+        }
+
+        #page3 img {
+            width: 30%;
+            padding: 10px;
+        }
+
+        #page2 #board {
+            margin-top: 50px;
+            padding: 20px 0;
+        }
+
+        #page2 #board .col h1 {
+            padding: 10px 0;
+            font-size: 60px;
+            color: rgb(11, 11, 124);
+        }
+
+        #page2 table {
+            margin-top: 50px;
+            font-size: 60px;
+            text-align: center;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+                <section id="page1">
+                    <h1>Production Analysis Chart</h1>
+
+                    <div id="board">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Traget</h2>
+                                <h2>500</h2>
+                            </div>
+                            <div class="col">
+                                <h2>Actual</h2>
+                                <h2>325</h2>
+                            </div>
+                            <div class="col">
+                                <h2>Balance</h2>
+                                <h2>-175</h2>
+                            </div>
+                            <div class="col">
+                                <h2>WIP</h2>
+                                <h2>150</h2>
+                            </div>
+                            <div class="col">
+                                <h2>INV</h2>
+                                <h2>160</h2>
+                            </div>
+                            <div class="col border-danger">
+                                <h2>Quality</h2>
+                                <h2>93.85%</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chart">
+                        <canvas id="chart"></canvas>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="swiper-slide">
+                <section id="page2">
+                    <h1>Quality Analysis</h1>
+                    <div id="board">
+                        <div class="row">
+                            <div class="col">
+                                <h1>Traget</h1>
+                                <h1>95%</h1>
+                            </div>
+                            <div class="col border-danger">
+                                <h1>Quality</h1>
+                                <h1>93.85%</h1>
+                            </div>
+                            <div class="col">
+                                <h1>Defect</h1>
+                                <h1>20</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Rank</th>
+                                <th scope="col">TOP 1</th>
+                                <th scope="col">TOP 2</th>
+                                <th scope="col">TOP 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Defect</th>
+                                <td>A</td>
+                                <td>B</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">count</th>
+                                <td>8</td>
+                                <td>6</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">%</th>
+                                <td>40%</td>
+                                <td>30%</td>
+                                <td>30%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+
+            <div class="swiper-slide">
+                <section id="page3">
+                    <div class="d-flex content">
+                        <div class="d-flex justify-content-center align-items-center">
+
+                            <img src="https://cdn.pixabay.com/photo/2013/07/12/14/48/no-smoking-148825_960_720.png"
+                                alt="">
+
+                            <img src="https://cdn.pixabay.com/photo/2017/05/27/22/28/proibido-2349642_960_720.png"
+                                alt="">
+
+                            <img src="https://cdn.pixabay.com/photo/2012/04/15/19/58/no-cellphones-35121_960_720.png"
+                                alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <script>
+
+        var ctx = document.getElementById('chart');
+
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00',
+                    '17:00', '18:00', '19:00', '20:00'
+                ],
+                datasets: [{
+                        type: 'bar',
+                        borderWidth: 1,
+                        label: 'H Actual',
+                        data: [50, 50, 20, 50, 50, 55, 60]
+                    },
+
+                    {
+                        type: 'line',
+                        backgroundColor: 'orange',
+                        borderColor: 'orange',
+                        label: 'C Target',
+                        data: [50, 100, 150, 200, 250, 300, 350],
+                        fill: false
+                    },
+
+                    {
+                        type: 'line',
+                        backgroundColor: 'green',
+                        borderColor: 'green',
+                        label: 'Actual',
+                        data: [50, 100, 120, 170, 220, 275, 325],
+                        fill: false
+                    },
+
+                    {
+                        type: 'line',
+                        backgroundColor: 'purple',
+                        borderColor: 'purple',
+                        label: 'H Target',
+                        data: [50, 50, 50, 50, 50, 50, 50],
+                        fill: false,
+                        borderDash: [5]
+
+                    },
+
+                ]
+            }
+        });
+    </script>
+
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            }
+        });
+    </script>
+
+</body>
+
+</html>
