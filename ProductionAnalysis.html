@@ -66,8 +66,8 @@
 
         #page3 .content {
             color: white;
-            position: relative;
-            top: calc(50% - 278px);
+            height: 100vh;
+            line-height: 100vh;
         }
 
         #page3 img {
@@ -76,8 +76,7 @@
         }
 
         #page2 #board {
-            margin-top: 50px;
-            padding: 20px 0;
+            padding: 10px 0;
         }
 
         #page2 #board .col h1 {
@@ -92,6 +91,42 @@
             text-align: center;
             padding: 40px 0;
         }
+
+        @media screen and (orientation: portrait) {
+            #page3 .content {
+                flex-direction: column;
+            }
+
+            #page2 #board {
+                margin-top: 10px;
+                padding: 0;
+            }
+
+            #page2 #board .col h1 {
+                padding: 0;
+                font-size: 30px;
+                color: rgb(11, 11, 124);
+            }
+
+            #page2 table {
+                margin-top: 10px;
+                font-size: 24px;
+                padding: 0;
+            }
+
+            h1,
+            h2 {
+                font-size: 30px;
+            }
+
+            h1 {
+                padding: 20px;
+            }
+
+            #page3 img {
+                width: 40%;
+            }
+        }
     </style>
 </head>
 
@@ -102,7 +137,7 @@
             <div class="swiper-slide">
 
                 <section id="page1">
-                    <h1>Production Analysis Chart</h1>
+                    <h1>Production Analysis</h1>
 
                     <div id="board">
                         <div class="row">
@@ -196,18 +231,13 @@
 
             <div class="swiper-slide">
                 <section id="page3">
-                    <div class="d-flex content">
-                        <div class="d-flex justify-content-center align-items-center">
+                    <div class="content d-flex justify-content-center align-items-center">
+                        <img src="https://cdn.pixabay.com/photo/2013/07/12/14/48/no-smoking-148825_960_720.png" alt="">
 
-                            <img src="https://cdn.pixabay.com/photo/2013/07/12/14/48/no-smoking-148825_960_720.png"
-                                alt="">
+                        <img src="https://cdn.pixabay.com/photo/2017/05/27/22/28/proibido-2349642_960_720.png" alt="">
 
-                            <img src="https://cdn.pixabay.com/photo/2017/05/27/22/28/proibido-2349642_960_720.png"
-                                alt="">
-
-                            <img src="https://cdn.pixabay.com/photo/2012/04/15/19/58/no-cellphones-35121_960_720.png"
-                                alt="">
-                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2012/04/15/19/58/no-cellphones-35121_960_720.png"
+                            alt="">
                     </div>
                 </section>
             </div>
@@ -228,7 +258,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
     <script>
-
         var ctx = document.getElementById('chart');
 
         var myChart = new Chart(ctx, {
@@ -282,8 +311,8 @@
     <script>
         var swiper = new Swiper('.swiper-container', {
             autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
+                delay: 3000,
+                disableOnInteraction: false,
             }
         });
     </script>
