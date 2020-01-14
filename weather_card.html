@@ -28,7 +28,7 @@
     <div class="row">
         <div class="col-3">
             <div class="card mb-3">
-                <h1 class="card-header">天氣卡片</h1>
+                <h1 class="card-header bg-info text-white">天氣卡片</h1>
                 <h2 class="day">
                     <script>
                         var Today = new Date();
@@ -75,7 +75,7 @@
                 var MaxT = location.weatherElement[4].time[0].parameter.parameterName;
                 cards.innerHTML += `<div class="col-3">
                                         <div class="card  mb-3">
-                                            <h1 class="card-header">${locationName}</h1>
+                                            <h1 class="card-header bg-warning text-dark">${locationName}</h1>
                                             <div class="card-body">
                                             <h2 class="card-title">${Wx}</h2>
                                             <p>降雨率: ${Pop}%</p>
